@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/9a8a62daed.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -21,54 +22,62 @@
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
-      <header class="header">
-          <a href="index.html" class="header__back-btn">
-            <i class="fas fa-arrow-left fa-2x"></i>
-          </a>
+    </div>
+    <header class="header">
+      <div class="header__column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
+        </a>
         <h1 class="header__header-column">
           <span class="header__header-title">Best Friend</span>
         </h1>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search"></i>
-          </span>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+    </header>
+    <main class="chat">
+      <div class="chat__timestamp">
+        FRIDAY,JANUARY 11,2019
+      </div>
+      <ul class="chat__messages">
+        <li class="chat__incoming-message message">
+          <img src="images/avatar.jpg" class="g-avatar chat__avatar" />
+          <div class="message__content">
+            <span class="message__author">Best Friend</span>
+            <div class="message__bubble">
+              Congrats I love you!
+            </div>
+            <span class="chat__timestamp">15:19</span>
+          </div>
+        </li>
+        <li class="chat__incoming-message message">
+          <div class="message__content">
+            <span class="chat__timestamp">15:19</span>
+            <div class="message__bubble">
+              Congrats I love you!
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="chat__write">
+        <div class="chat__write-column">
+          <i class="far fa-plus-square"></i>
         </div>
-        <main class="chat">
-          <div class="chat__timestamp">
-            FRIDAY,JANUARY 11,2019
-          </div>
-          <ul class="chat__messages">
-            <li class="chat__incoming-message message">
-              <img src="images/avatar.jpg" class="g-avatar chat__avatar">
-              <div class="message__content">
-                <span class="message__author">Best Friend</span>
-                <div class="message__bubble">
-                  Congrats I love you!
-                </div>
-                <span class="chat__timestamp">15:19</span>
-              </div>
-            </li>
-            <li class="chat__incoming-message message">
-              <div class="message__content">
-                <span class="chat__timestamp">15:19</span>
-                <div class="message__bubble">
-                  Congrats I love you!
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="chat__write">
-            <div class="chat__write-column">
-              <i class="far fa-plus-square"></i>
-            </div>
-            <div class="chat__write-column">
-              <input type="text" placeholder="Send message" class="chat__write-input">
-            </div>
-            <div class="chat__write-column">
-              <i class="far fa-smile-wink"></i>
-              <i class="fas fa-microphone"></i>
-            </div>
-          </div>
-        </main>
+        <div class="chat__write-column">
+          <input
+            type="text"
+            placeholder="Send message"
+            class="chat__write-input"
+          />
+        </div>
+        <div class="chat__write-column">
+          <i class="far fa-smile-wink"></i>
+          <i class="fas fa-microphone"></i>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
