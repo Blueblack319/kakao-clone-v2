@@ -7,7 +7,59 @@
 .friend .friend__avatar {
   width: 50px;
   border-radius: 35%;
+  margin-right: 15px;
 }
 
-.friend .g-avatar {
+.g-avatar.friend__avatar {
+  width: 70px;
+}
+
+.m-frined.friend__avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend .friend__name {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.friend .friend__status,
+.friend .friend__btm-text,
+.friend .friend__timestamp {
+  opacity: 0.6;
+}
+
+.friend .friend__status,
+.friend .friend__timestamp {
+  font-size: 14px;
+}
+
+.friend .friend__btm-text {
+  font-size: 12px;
+}
+
+.friend .friend__now-listening {
+  opacity: 0.6;
+  border: 2px solid #3aec3a;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+
+.friend__now-listening span {
+  opacity: 0.7;
+  font-size: 15px;
+}
+.friend__now-listening i {
+  font-size: 12px;
+}
+
+.friend__column .friend__add-btn {
+  background-color: #f0eeee;
+  padding: 10px 13px;
+  border-radius: 5px;
 }

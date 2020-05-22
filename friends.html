@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
-    
+
   </head>
   <body>
     <div class="status-bar">
@@ -39,19 +39,23 @@
       </header>
     </div>
     <main class="friends">
-      <header class="friends__header friend friend--lg">
-        <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
-        <div class="friend__content">
-          <span class="friend__name">Niclas Serrano</span>
-          <span class="friend__status">nomadcoder.co</span>
+      <header class="friends__header friend">
+        <div class="friend__column">
+          <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+          <div class="friend__content">
+            <span class="friend__name">Niclas Serrano</span>
+            <span class="friend__status">nomadcoder.co</span>
+          </div>
         </div>
       </header>
       <div class="friends__plus-friend">
         <h5 class="friends__title">Plus friend</h5>
         <div class="friends__friend friend">
-          <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
-          <div class="friend__content">
-            <span class="friend__name">Plus Friend</span>
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Plus Friend</span>
+            </div>
           </div>
         </div>
       </div>
@@ -59,7 +63,7 @@
         <h5 class="friends__title">Friends 14</h5>
         <li class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <img src="images/avatar.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">Nicolas Serrano</span>
               <span class="friend__status">nomadcoder.co</span>
